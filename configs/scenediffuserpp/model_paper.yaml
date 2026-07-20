@@ -1,0 +1,15 @@
+model:
+  maximum_agents: 128
+  # SceneDiffuser++ does not disclose this capacity; 64 is a clean-room choice.
+  maximum_lights: 64
+  timesteps: 91
+  history_steps: 11
+  latent_queries: 192
+  hidden_dim: 512
+  transformer_layers: 8
+  attention_heads: 8
+  conditioning_fusion: noisy_local_global_adaln
+  sampling_steps: 32
+  sampler: paper_renoise
+  sampling_time_grid: linear
+  validity_mode: paper

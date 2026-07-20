@@ -1,0 +1,25 @@
+dataset:
+  name: nanjing_scenediffuserpp_10hz
+  frequency_hz: 10
+  timesteps: 91
+  history_steps: 11
+  future_steps: 80
+  observation_radius_m: 80.0
+  map_radius_m: 1000.0
+  map_point_spacing_m: 10.0
+  maximum_map_points: 12288
+  maximum_map_lanes: 1024
+  maximum_map_connections: 4096
+  warmup_s: 60.0
+  duration_s: 600.0
+  window_stride_steps: 20
+  minimum_av_travel_m: 20.0
+  minimum_reference_agents: 2
+  require_reference_light: false
+  maximum_agents: 32
+  maximum_lights: 32
+  shard_size: 512
+  split_seed: 864
+runs:
+  departure_period_s: [0.5, 1.0, 2.0]
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7]

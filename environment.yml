@@ -1,0 +1,23 @@
+name: topoworld-lewm
+channels:
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch
+  - pytorch-cuda=12.4
+  - numpy
+  - pyyaml
+  - pytest
+  - einops
+  - h5py
+  - matplotlib
+  - pip
+  - pip:
+      - stable-pretraining==0.1.8
+      - transformers
+      - eclipse-sumo==1.24.0
+      - traci==1.24.0
+      - sumolib==1.24.0

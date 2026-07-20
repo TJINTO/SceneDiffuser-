@@ -1,0 +1,24 @@
+model_config: configs/scenediffuserpp/model_large_32.yaml
+training:
+  device: cuda
+  precision: bf16
+  seed: 20260720
+  batch_size: 1
+  max_steps: 1000
+  checkpoint_every: 1000
+  learning_rate: 0.0003
+  beta1: 0.9
+  weight_decay: 0.01
+  gradient_clip_norm: 1.0
+  ema_decay: 0.999
+  task: mixed
+  history_steps: 11
+  scene_generation_probability: 0.5
+  control_feature_probability: 0.5
+optimizer_provenance:
+  implementation: topoworld.scenediffuserpp.trainer.PaperAdafactor
+  scale_parameter: false
+  relative_step: false
+  warmup_init: false
+  decay_adam: 0.9999
+  paper_decay_adam_0_9999_available: true

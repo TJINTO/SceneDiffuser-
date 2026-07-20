@@ -1,0 +1,9 @@
+[project]
+name = "scenediffuserpp-sumo-reproduction"
+version = "0.1.0"
+description = "Clean-room SceneDiffuser++-style SUMO/Nanjing reproduction code."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

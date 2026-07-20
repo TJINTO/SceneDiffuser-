@@ -1,0 +1,15 @@
+model:
+  maximum_agents: 32
+  maximum_lights: 32
+  timesteps: 91
+  history_steps: 11
+  latent_queries: 64
+  hidden_dim: 128
+  transformer_layers: 4
+  attention_heads: 4
+  conditioning_fusion: noisy_local_global_adaln
+  sampling_steps: 32
+  sampler: paper_renoise
+  # The paper gives 32 steps but not the exact time discretization.
+  sampling_time_grid: linear
+  validity_mode: paper

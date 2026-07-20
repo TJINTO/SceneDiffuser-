@@ -1,0 +1,28 @@
+evaluation:
+  split: validation
+  max_runs: null
+  minimum_samples: 2
+  seeds: [7, 8]
+  weights: ema
+  sampling_steps: 32
+  allow_train: false
+  validity_mode: null
+  max_speed_mps: null
+  speed_limit_margin: 1.0
+  timestep_seconds: 0.1
+  thresholds:
+    max_loss_ratio: 0.70
+    minimum_valid_fraction: 0.01
+    maximum_valid_fraction: 0.99
+    minimum_seed_difference: 0.00001
+    maximum_validity_fraction_error: 0.05
+    minimum_mean_speed_ratio: 0.5
+    maximum_mean_speed_ratio: 2.0
+    maximum_mean_speed_mps: 40.0
+    maximum_p95_speed_mps: 45.0
+    maximum_p95_speed_ratio: 2.0
+    maximum_p95_acceleration_mps2: 15.0
+    maximum_p95_jerk_mps3: 100.0
+    maximum_static_fraction_error: 0.15
+    sparse_transition_absolute_tolerance: 2
+    sparse_transition_relative_tolerance: 0.5
