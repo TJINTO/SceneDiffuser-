@@ -5,9 +5,9 @@ from dataclasses import dataclass
 import torch
 from torch import nn
 
-from topoworld.scenediffuserpp.diffusion import forward_noise
-from topoworld.scenediffuserpp.diffusion import recover_clean
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.diffusion import forward_noise
+from scenediffuserpp.diffusion import recover_clean
+from scenediffuserpp.normalization import POSITION_SCALE
 
 
 ROADGRAPH_SPEED_SCALE_MPS = 40.0

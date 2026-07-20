@@ -11,9 +11,9 @@ from matplotlib.patches import Circle
 from matplotlib.patches import Rectangle
 from matplotlib.transforms import Affine2D
 
-from topoworld.scenediffuserpp.normalization import AgentNormalizer
-from topoworld.scenediffuserpp.normalization import LightNormalizer
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.normalization import AgentNormalizer
+from scenediffuserpp.normalization import LightNormalizer
+from scenediffuserpp.normalization import POSITION_SCALE
 
 
 def plot_scene(

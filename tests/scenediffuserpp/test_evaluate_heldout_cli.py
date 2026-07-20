@@ -8,18 +8,18 @@ import numpy as np
 import torch
 import yaml
 
-from topoworld.scenediffuserpp.multi_tensor_model import ModelConfig
-from topoworld.scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
-from topoworld.scenediffuserpp.roadgraph import LaneToken
-from topoworld.scenediffuserpp.roadgraph import Roadgraph
-from topoworld.scenediffuserpp.scene_builder import AgentState
-from topoworld.scenediffuserpp.scene_builder import build_window
-from topoworld.scenediffuserpp.schema import SceneSpec
-from topoworld.scenediffuserpp.storage import file_sha256
-from topoworld.scenediffuserpp.storage import write_shard
-from topoworld.scenediffuserpp.trainer import save_checkpoint
-from topoworld.scenediffuserpp.trainer import SceneDiffuserTrainer
-from topoworld.scenediffuserpp.trainer import TrainerConfig
+from scenediffuserpp.multi_tensor_model import ModelConfig
+from scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
+from scenediffuserpp.roadgraph import LaneToken
+from scenediffuserpp.roadgraph import Roadgraph
+from scenediffuserpp.scene_builder import AgentState
+from scenediffuserpp.scene_builder import build_window
+from scenediffuserpp.schema import SceneSpec
+from scenediffuserpp.storage import file_sha256
+from scenediffuserpp.storage import write_shard
+from scenediffuserpp.trainer import save_checkpoint
+from scenediffuserpp.trainer import SceneDiffuserTrainer
+from scenediffuserpp.trainer import TrainerConfig
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]

@@ -11,9 +11,9 @@ SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from topoworld.scenediffuserpp.audit import audit_dataset
-from topoworld.scenediffuserpp.diagnostics import plot_scene
-from topoworld.scenediffuserpp.storage import SceneDataset
+from scenediffuserpp.audit import audit_dataset
+from scenediffuserpp.diagnostics import plot_scene
+from scenediffuserpp.storage import SceneDataset
 
 
 def main() -> int:

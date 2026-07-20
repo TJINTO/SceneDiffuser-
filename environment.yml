@@ -1,4 +1,4 @@
-name: topoworld-lewm
+name: scenediffuserpp-sumo
 channels:
   - pytorch=2.5.1
   - torchvision=0.20.1

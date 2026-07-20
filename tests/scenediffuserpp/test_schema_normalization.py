@@ -1,15 +1,15 @@
 import numpy as np
 import pytest
 
-from topoworld.scenediffuserpp.normalization import AgentNormalizer
-from topoworld.scenediffuserpp.normalization import LightNormalizer
-from topoworld.scenediffuserpp.normalization import wrap_to_pi
-from topoworld.scenediffuserpp.schema import AGENT_CHANNELS
-from topoworld.scenediffuserpp.schema import LIGHT_CHANNELS
-from topoworld.scenediffuserpp.schema import AgentType
-from topoworld.scenediffuserpp.schema import dataset_build_config_from_mapping
-from topoworld.scenediffuserpp.schema import LightState
-from topoworld.scenediffuserpp.schema import SceneSpec
+from scenediffuserpp.normalization import AgentNormalizer
+from scenediffuserpp.normalization import LightNormalizer
+from scenediffuserpp.normalization import wrap_to_pi
+from scenediffuserpp.schema import AGENT_CHANNELS
+from scenediffuserpp.schema import LIGHT_CHANNELS
+from scenediffuserpp.schema import AgentType
+from scenediffuserpp.schema import dataset_build_config_from_mapping
+from scenediffuserpp.schema import LightState
+from scenediffuserpp.schema import SceneSpec
 
 
 def test_small_scene_spec_has_paper_time_contract():

@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from topoworld.scenediffuserpp.model_data_contract import validate_scene_model_contract
-from topoworld.scenediffuserpp.model_data_contract import validate_training_model_contract
+from scenediffuserpp.model_data_contract import validate_scene_model_contract
+from scenediffuserpp.model_data_contract import validate_training_model_contract
 
 
 def _sample(*, agents: int = 32, lights: int = 32, timesteps: int = 91) -> dict:

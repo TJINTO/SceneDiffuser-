@@ -5,13 +5,13 @@ from pathlib import Path
 import pytest
 import yaml
 
-from topoworld.scenediffuserpp.fidelity_audit import CLASSIFICATIONS
-from topoworld.scenediffuserpp.fidelity_audit import audit_to_json
-from topoworld.scenediffuserpp.fidelity_audit import audit_to_markdown
-from topoworld.scenediffuserpp.fidelity_audit import build_fidelity_audit
-from topoworld.scenediffuserpp.fidelity_audit import write_audit_artifacts
-from topoworld.scenediffuserpp.schema import dataset_build_config_from_mapping
-from topoworld.scenediffuserpp.storage import assign_split
+from scenediffuserpp.fidelity_audit import CLASSIFICATIONS
+from scenediffuserpp.fidelity_audit import audit_to_json
+from scenediffuserpp.fidelity_audit import audit_to_markdown
+from scenediffuserpp.fidelity_audit import build_fidelity_audit
+from scenediffuserpp.fidelity_audit import write_audit_artifacts
+from scenediffuserpp.schema import dataset_build_config_from_mapping
+from scenediffuserpp.storage import assign_split
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]

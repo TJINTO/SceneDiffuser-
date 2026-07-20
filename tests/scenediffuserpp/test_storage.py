@@ -4,16 +4,16 @@ from dataclasses import replace
 import h5py
 import numpy as np
 
-from topoworld.scenediffuserpp.roadgraph import LaneToken
-from topoworld.scenediffuserpp.roadgraph import Roadgraph
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
-from topoworld.scenediffuserpp.scene_builder import AgentState
-from topoworld.scenediffuserpp.scene_builder import build_window
-from topoworld.scenediffuserpp.schema import SceneSpec
-from topoworld.scenediffuserpp.storage import SceneDataset
-from topoworld.scenediffuserpp.storage import assign_split
-from topoworld.scenediffuserpp.storage import canonical_json_sha256
-from topoworld.scenediffuserpp.storage import write_shard
+from scenediffuserpp.roadgraph import LaneToken
+from scenediffuserpp.roadgraph import Roadgraph
+from scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.scene_builder import AgentState
+from scenediffuserpp.scene_builder import build_window
+from scenediffuserpp.schema import SceneSpec
+from scenediffuserpp.storage import SceneDataset
+from scenediffuserpp.storage import assign_split
+from scenediffuserpp.storage import canonical_json_sha256
+from scenediffuserpp.storage import write_shard
 
 
 def _scene_window():

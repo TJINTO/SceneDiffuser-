@@ -9,8 +9,8 @@ from typing import Iterable, Sequence
 import h5py
 import numpy as np
 
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
-from topoworld.scenediffuserpp.scene_builder import SceneWindow
+from scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.scene_builder import SceneWindow
 
 
 SCHEMA_VERSION = "scenediffuserpp-sumo-v2"

@@ -2,7 +2,7 @@ from pathlib import Path
 
 import yaml
 
-from topoworld.scenediffuserpp.schema import dataset_build_config_from_mapping
+from scenediffuserpp.schema import dataset_build_config_from_mapping
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]

@@ -17,7 +17,7 @@ training:
   diagnostic_sample_ids:
     - metric_teacher_train_0_113_1286
 optimizer_provenance:
-  implementation: topoworld.scenediffuserpp.trainer.PaperAdafactor
+  implementation: scenediffuserpp.trainer.PaperAdafactor
   scale_parameter: false
   relative_step: false
   warmup_init: false

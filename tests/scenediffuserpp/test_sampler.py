@@ -4,11 +4,11 @@ import pytest
 import torch
 from torch import nn
 
-from topoworld.scenediffuserpp.sampler import sample_scene
-from topoworld.scenediffuserpp.sampler import project_sparse_agent_speed
-from topoworld.scenediffuserpp.sampler import soft_clip_sparse
-import topoworld.scenediffuserpp.sampler as sampler_module
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.sampler import sample_scene
+from scenediffuserpp.sampler import project_sparse_agent_speed
+from scenediffuserpp.sampler import soft_clip_sparse
+import scenediffuserpp.sampler as sampler_module
+from scenediffuserpp.normalization import POSITION_SCALE
 
 
 class ZeroVelocityDenoiser(nn.Module):

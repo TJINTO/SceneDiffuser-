@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 from typing import Mapping
 
-from topoworld.scenediffuserpp.evaluation import verify_training_log
+from scenediffuserpp.evaluation import verify_training_log
 
 
 def build_checkpoint_run_config(

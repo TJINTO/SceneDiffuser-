@@ -9,12 +9,12 @@ import xml.etree.ElementTree as ET
 
 import numpy as np
 
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
-from topoworld.scenediffuserpp.scene_builder import count_light_state_transitions
-from topoworld.scenediffuserpp.storage import SUPPORTED_SCHEMA_VERSIONS
-from topoworld.scenediffuserpp.storage import SceneDataset
-from topoworld.scenediffuserpp.storage import canonical_json_sha256
-from topoworld.scenediffuserpp.storage import file_sha256
+from scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.scene_builder import count_light_state_transitions
+from scenediffuserpp.storage import SUPPORTED_SCHEMA_VERSIONS
+from scenediffuserpp.storage import SceneDataset
+from scenediffuserpp.storage import canonical_json_sha256
+from scenediffuserpp.storage import file_sha256
 
 
 DEFAULT_THRESHOLDS = {

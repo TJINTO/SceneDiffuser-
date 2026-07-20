@@ -3,18 +3,18 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from topoworld.scenediffuserpp.normalization import AgentNormalizer
-from topoworld.scenediffuserpp.normalization import LightNormalizer
-from topoworld.scenediffuserpp.roadgraph import LightToken
-from topoworld.scenediffuserpp.scene_builder import AgentState
-from topoworld.scenediffuserpp.scene_builder import build_window
-from topoworld.scenediffuserpp.scene_builder import candidate_windows
-from topoworld.scenediffuserpp.scene_builder import count_light_state_transitions
-from topoworld.scenediffuserpp.scene_builder import parse_fcd
-from topoworld.scenediffuserpp.scene_builder import parse_tls_jsonl
-from topoworld.scenediffuserpp.schema import AgentType
-from topoworld.scenediffuserpp.schema import LightState
-from topoworld.scenediffuserpp.schema import SceneSpec
+from scenediffuserpp.normalization import AgentNormalizer
+from scenediffuserpp.normalization import LightNormalizer
+from scenediffuserpp.roadgraph import LightToken
+from scenediffuserpp.scene_builder import AgentState
+from scenediffuserpp.scene_builder import build_window
+from scenediffuserpp.scene_builder import candidate_windows
+from scenediffuserpp.scene_builder import count_light_state_transitions
+from scenediffuserpp.scene_builder import parse_fcd
+from scenediffuserpp.scene_builder import parse_tls_jsonl
+from scenediffuserpp.schema import AgentType
+from scenediffuserpp.schema import LightState
+from scenediffuserpp.schema import SceneSpec
 
 
 def _state(x, y=0.0, heading=0.0, speed=10.0):

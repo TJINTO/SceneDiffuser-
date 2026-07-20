@@ -1,10 +1,10 @@
 import pytest
 import torch
 
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
-from topoworld.scenediffuserpp.short_evaluation import summarize_short_evaluation
-from topoworld.scenediffuserpp.short_evaluation import ShortEvaluationThresholds
-from topoworld.scenediffuserpp.short_evaluation import sparse_validity_statistics
+from scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.short_evaluation import summarize_short_evaluation
+from scenediffuserpp.short_evaluation import ShortEvaluationThresholds
+from scenediffuserpp.short_evaluation import sparse_validity_statistics
 
 
 def _trajectory(step_normalized: float) -> torch.Tensor:

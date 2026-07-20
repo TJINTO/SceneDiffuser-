@@ -1,9 +1,9 @@
 import pytest
 import torch
 
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
-from topoworld.scenediffuserpp.overfit_evaluation import behavior_prediction_baselines
-from topoworld.scenediffuserpp.overfit_evaluation import summarize_t1_overfit_gate
+from scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.overfit_evaluation import behavior_prediction_baselines
+from scenediffuserpp.overfit_evaluation import summarize_t1_overfit_gate
 
 
 def test_constant_velocity_baseline_extrapolates_history():

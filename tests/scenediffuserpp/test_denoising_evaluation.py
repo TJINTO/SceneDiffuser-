@@ -4,10 +4,10 @@ import pytest
 import torch
 from torch import nn
 
-from topoworld.scenediffuserpp.denoising_evaluation import denoising_metrics
-from topoworld.scenediffuserpp.denoising_evaluation import evaluate_denoising_levels
-from topoworld.scenediffuserpp.diffusion import cosine_alpha_sigma
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.denoising_evaluation import denoising_metrics
+from scenediffuserpp.denoising_evaluation import evaluate_denoising_levels
+from scenediffuserpp.diffusion import cosine_alpha_sigma
+from scenediffuserpp.normalization import POSITION_SCALE
 
 
 class OracleDenoiser(nn.Module):

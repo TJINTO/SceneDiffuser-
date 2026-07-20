@@ -17,29 +17,29 @@ SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from topoworld.scenediffuserpp.audit import audit_dataset
-from topoworld.scenediffuserpp.audit import has_only_incomplete_corpus_failures
-from topoworld.scenediffuserpp.masks import behavior_prediction_mask
-from topoworld.scenediffuserpp.masks import mixed_multitensor_training_masks
-from topoworld.scenediffuserpp.model_data_contract import validate_scene_model_contract
-from topoworld.scenediffuserpp.model_data_contract import validate_training_model_contract
-from topoworld.scenediffuserpp.multi_tensor_model import ModelConfig
-from topoworld.scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
-from topoworld.scenediffuserpp.storage import SceneDataset
-from topoworld.scenediffuserpp.trainer import SceneDiffuserTrainer
-from topoworld.scenediffuserpp.trainer import TrainerConfig
-from topoworld.scenediffuserpp.trainer import cuda_memory_metrics
-from topoworld.scenediffuserpp.trainer import load_checkpoint
-from topoworld.scenediffuserpp.trainer import reset_cuda_memory_peak
-from topoworld.scenediffuserpp.trainer import save_checkpoint
-from topoworld.scenediffuserpp.trainer import seed_torch
-from topoworld.scenediffuserpp.trainer import train_step
-from topoworld.scenediffuserpp.training_sampler import DeterministicEpochBatchSampler
-from topoworld.scenediffuserpp.training_sampler import resolve_diagnostic_sample_ids
-from topoworld.scenediffuserpp.training_sampler import select_training_indices
-from topoworld.scenediffuserpp.training_provenance import build_checkpoint_run_config
-from topoworld.scenediffuserpp.training_provenance import verify_resume_contract
-from topoworld.scenediffuserpp.training_provenance import verify_training_start
+from scenediffuserpp.audit import audit_dataset
+from scenediffuserpp.audit import has_only_incomplete_corpus_failures
+from scenediffuserpp.masks import behavior_prediction_mask
+from scenediffuserpp.masks import mixed_multitensor_training_masks
+from scenediffuserpp.model_data_contract import validate_scene_model_contract
+from scenediffuserpp.model_data_contract import validate_training_model_contract
+from scenediffuserpp.multi_tensor_model import ModelConfig
+from scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
+from scenediffuserpp.storage import SceneDataset
+from scenediffuserpp.trainer import SceneDiffuserTrainer
+from scenediffuserpp.trainer import TrainerConfig
+from scenediffuserpp.trainer import cuda_memory_metrics
+from scenediffuserpp.trainer import load_checkpoint
+from scenediffuserpp.trainer import reset_cuda_memory_peak
+from scenediffuserpp.trainer import save_checkpoint
+from scenediffuserpp.trainer import seed_torch
+from scenediffuserpp.trainer import train_step
+from scenediffuserpp.training_sampler import DeterministicEpochBatchSampler
+from scenediffuserpp.training_sampler import resolve_diagnostic_sample_ids
+from scenediffuserpp.training_sampler import select_training_indices
+from scenediffuserpp.training_provenance import build_checkpoint_run_config
+from scenediffuserpp.training_provenance import verify_resume_contract
+from scenediffuserpp.training_provenance import verify_training_start
 
 
 def main() -> int:

@@ -2,10 +2,10 @@ import numpy as np
 import pytest
 import sumolib
 
-from topoworld.scenediffuserpp.roadgraph import load_roadgraph
-from topoworld.scenediffuserpp.roadgraph import map_sumo_signal
-from topoworld.scenediffuserpp.roadgraph import validate_tls_state
-from topoworld.scenediffuserpp.schema import LightState
+from scenediffuserpp.roadgraph import load_roadgraph
+from scenediffuserpp.roadgraph import map_sumo_signal
+from scenediffuserpp.roadgraph import validate_tls_state
+from scenediffuserpp.schema import LightState
 
 
 def test_roadgraph_excludes_internal_edges_and_keeps_successors(tiny_signal_net_file):

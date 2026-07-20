@@ -10,7 +10,7 @@ from typing import Any
 from typing import Mapping
 from typing import Sequence
 
-from topoworld.scenediffuserpp.short_evaluation import ShortEvaluationThresholds
+from scenediffuserpp.short_evaluation import ShortEvaluationThresholds
 
 
 @dataclass(frozen=True)

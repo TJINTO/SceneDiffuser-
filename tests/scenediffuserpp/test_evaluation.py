@@ -2,13 +2,13 @@ import json
 
 import pytest
 
-from topoworld.scenediffuserpp.evaluation import aggregate_evaluation_records
-from topoworld.scenediffuserpp.evaluation import evaluation_config_from_mapping
-from topoworld.scenediffuserpp.evaluation import EvaluationRecord
-from topoworld.scenediffuserpp.evaluation import select_evaluation_samples
-from topoworld.scenediffuserpp.evaluation import training_log_through_checkpoint
-from topoworld.scenediffuserpp.evaluation import verify_checkpoint_manifest
-from topoworld.scenediffuserpp.evaluation import verify_training_log
+from scenediffuserpp.evaluation import aggregate_evaluation_records
+from scenediffuserpp.evaluation import evaluation_config_from_mapping
+from scenediffuserpp.evaluation import EvaluationRecord
+from scenediffuserpp.evaluation import select_evaluation_samples
+from scenediffuserpp.evaluation import training_log_through_checkpoint
+from scenediffuserpp.evaluation import verify_checkpoint_manifest
+from scenediffuserpp.evaluation import verify_training_log
 
 
 def _row(sample_id, run_id, split, shard="shard_00000.h5", sample_index=0):

@@ -1,8 +1,8 @@
 import pytest
 
-from topoworld.scenediffuserpp.training_sampler import DeterministicEpochBatchSampler
-from topoworld.scenediffuserpp.training_sampler import resolve_diagnostic_sample_ids
-from topoworld.scenediffuserpp.training_sampler import select_training_indices
+from scenediffuserpp.training_sampler import DeterministicEpochBatchSampler
+from scenediffuserpp.training_sampler import resolve_diagnostic_sample_ids
+from scenediffuserpp.training_sampler import select_training_indices
 
 
 def test_epoch_sampler_shuffles_every_sample_once_and_is_resume_stable():

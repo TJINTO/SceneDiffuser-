@@ -3,9 +3,9 @@ from pathlib import Path
 
 import pytest
 
-from topoworld.scenediffuserpp.training_provenance import build_checkpoint_run_config
-from topoworld.scenediffuserpp.training_provenance import verify_resume_contract
-from topoworld.scenediffuserpp.training_provenance import verify_training_start
+from scenediffuserpp.training_provenance import build_checkpoint_run_config
+from scenediffuserpp.training_provenance import verify_resume_contract
+from scenediffuserpp.training_provenance import verify_training_start
 
 
 def test_fresh_training_rejects_a_nonempty_existing_log(tmp_path: Path):
@@ -77,7 +77,7 @@ def test_resume_contract_accepts_identical_semantics():
 
 def test_checkpoint_run_config_preserves_optimizer_provenance():
     optimizer_provenance = {
-        "implementation": "topoworld.scenediffuserpp.trainer.PaperAdafactor",
+        "implementation": "scenediffuserpp.trainer.PaperAdafactor",
         "decay_adam": 0.9999,
         "paper_decay_adam_0_9999_available": True,
     }

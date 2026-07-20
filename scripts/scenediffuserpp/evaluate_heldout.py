@@ -18,25 +18,25 @@ SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from topoworld.scenediffuserpp.evaluation import aggregate_evaluation_records
-from topoworld.scenediffuserpp.evaluation import evaluation_config_from_mapping
-from topoworld.scenediffuserpp.evaluation import EvaluationRecord
-from topoworld.scenediffuserpp.evaluation import HeldoutEvaluationConfig
-from topoworld.scenediffuserpp.evaluation import select_evaluation_samples
-from topoworld.scenediffuserpp.evaluation import verify_checkpoint_manifest
-from topoworld.scenediffuserpp.evaluation import verify_training_log
-from topoworld.scenediffuserpp.masks import behavior_prediction_mask
-from topoworld.scenediffuserpp.model_data_contract import validate_scene_model_contract
-from topoworld.scenediffuserpp.model_data_contract import validate_training_model_contract
-from topoworld.scenediffuserpp.multi_tensor_model import ModelConfig
-from topoworld.scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
-from topoworld.scenediffuserpp.sampler import sample_scene
-from topoworld.scenediffuserpp.short_evaluation import summarize_short_evaluation
-from topoworld.scenediffuserpp.storage import file_sha256
-from topoworld.scenediffuserpp.storage import SceneDataset
-from topoworld.scenediffuserpp.trainer import load_checkpoint
-from topoworld.scenediffuserpp.trainer import SceneDiffuserTrainer
-from topoworld.scenediffuserpp.trainer import TrainerConfig
+from scenediffuserpp.evaluation import aggregate_evaluation_records
+from scenediffuserpp.evaluation import evaluation_config_from_mapping
+from scenediffuserpp.evaluation import EvaluationRecord
+from scenediffuserpp.evaluation import HeldoutEvaluationConfig
+from scenediffuserpp.evaluation import select_evaluation_samples
+from scenediffuserpp.evaluation import verify_checkpoint_manifest
+from scenediffuserpp.evaluation import verify_training_log
+from scenediffuserpp.masks import behavior_prediction_mask
+from scenediffuserpp.model_data_contract import validate_scene_model_contract
+from scenediffuserpp.model_data_contract import validate_training_model_contract
+from scenediffuserpp.multi_tensor_model import ModelConfig
+from scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
+from scenediffuserpp.sampler import sample_scene
+from scenediffuserpp.short_evaluation import summarize_short_evaluation
+from scenediffuserpp.storage import file_sha256
+from scenediffuserpp.storage import SceneDataset
+from scenediffuserpp.trainer import load_checkpoint
+from scenediffuserpp.trainer import SceneDiffuserTrainer
+from scenediffuserpp.trainer import TrainerConfig
 
 
 def main() -> int:

@@ -8,15 +8,15 @@ import xml.etree.ElementTree as ET
 
 import numpy as np
 
-from topoworld.scenediffuserpp.normalization import AgentNormalizer
-from topoworld.scenediffuserpp.normalization import LightNormalizer
-from topoworld.scenediffuserpp.normalization import wrap_to_pi
-from topoworld.scenediffuserpp.roadgraph import LightToken
-from topoworld.scenediffuserpp.roadgraph import Roadgraph
-from topoworld.scenediffuserpp.roadgraph import map_sumo_signal
-from topoworld.scenediffuserpp.roadgraph import validate_tls_state
-from topoworld.scenediffuserpp.schema import AgentType
-from topoworld.scenediffuserpp.schema import SceneSpec
+from scenediffuserpp.normalization import AgentNormalizer
+from scenediffuserpp.normalization import LightNormalizer
+from scenediffuserpp.normalization import wrap_to_pi
+from scenediffuserpp.roadgraph import LightToken
+from scenediffuserpp.roadgraph import Roadgraph
+from scenediffuserpp.roadgraph import map_sumo_signal
+from scenediffuserpp.roadgraph import validate_tls_state
+from scenediffuserpp.schema import AgentType
+from scenediffuserpp.schema import SceneSpec
 
 
 DEFAULT_LENGTH_M = 5.0

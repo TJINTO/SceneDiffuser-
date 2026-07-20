@@ -2,9 +2,9 @@ from pathlib import Path
 
 import pytest
 
-from topoworld.scenediffuserpp.sumo_export import SumoTeacherConfig
-from topoworld.scenediffuserpp.sumo_export import build_sumo_command
-from topoworld.scenediffuserpp.sumo_export import tls_snapshot
+from scenediffuserpp.sumo_export import SumoTeacherConfig
+from scenediffuserpp.sumo_export import build_sumo_command
+from scenediffuserpp.sumo_export import tls_snapshot
 
 
 class _FakeTrafficLightDomain:

@@ -5,7 +5,7 @@ from typing import Any
 
 import torch
 
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.normalization import POSITION_SCALE
 
 
 DEFAULT_T1_THRESHOLDS = {

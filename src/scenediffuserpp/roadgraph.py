@@ -7,7 +7,7 @@ from typing import Iterable
 import numpy as np
 import sumolib
 
-from topoworld.scenediffuserpp.schema import LightState
+from scenediffuserpp.schema import LightState
 
 
 @dataclass(frozen=True)

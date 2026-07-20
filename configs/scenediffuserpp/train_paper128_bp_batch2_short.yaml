@@ -15,7 +15,7 @@ training:
   history_steps: 11
   channel_metrics_every: 25
 optimizer_provenance:
-  implementation: topoworld.scenediffuserpp.trainer.PaperAdafactor
+  implementation: scenediffuserpp.trainer.PaperAdafactor
   scale_parameter: false
   relative_step: false
   warmup_init: false

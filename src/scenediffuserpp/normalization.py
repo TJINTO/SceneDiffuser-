@@ -4,8 +4,8 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from topoworld.scenediffuserpp.schema import AgentType
-from topoworld.scenediffuserpp.schema import LightState
+from scenediffuserpp.schema import AgentType
+from scenediffuserpp.schema import LightState
 
 
 POSITION_SCALE = 1000.0

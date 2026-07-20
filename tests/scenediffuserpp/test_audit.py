@@ -4,18 +4,18 @@ from pathlib import Path
 import h5py
 import numpy as np
 
-from topoworld.scenediffuserpp.audit import audit_dataset
-from topoworld.scenediffuserpp.audit import has_only_incomplete_corpus_failures
-from topoworld.scenediffuserpp.diagnostics import plot_scene
-from topoworld.scenediffuserpp.roadgraph import LaneToken
-from topoworld.scenediffuserpp.roadgraph import Roadgraph
-from topoworld.scenediffuserpp.scene_builder import AgentState
-from topoworld.scenediffuserpp.scene_builder import build_window
-from topoworld.scenediffuserpp.schema import SceneSpec
-from topoworld.scenediffuserpp.storage import SceneDataset
-from topoworld.scenediffuserpp.storage import canonical_json_sha256
-from topoworld.scenediffuserpp.storage import file_sha256
-from topoworld.scenediffuserpp.storage import write_shard
+from scenediffuserpp.audit import audit_dataset
+from scenediffuserpp.audit import has_only_incomplete_corpus_failures
+from scenediffuserpp.diagnostics import plot_scene
+from scenediffuserpp.roadgraph import LaneToken
+from scenediffuserpp.roadgraph import Roadgraph
+from scenediffuserpp.scene_builder import AgentState
+from scenediffuserpp.scene_builder import build_window
+from scenediffuserpp.schema import SceneSpec
+from scenediffuserpp.storage import SceneDataset
+from scenediffuserpp.storage import canonical_json_sha256
+from scenediffuserpp.storage import file_sha256
+from scenediffuserpp.storage import write_shard
 
 
 def _write_net(path: Path, metric: bool = True) -> Path:

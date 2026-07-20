@@ -14,19 +14,19 @@ SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from topoworld.scenediffuserpp.roadgraph import load_roadgraph
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
-from topoworld.scenediffuserpp.scene_builder import build_window
-from topoworld.scenediffuserpp.scene_builder import candidate_windows
-from topoworld.scenediffuserpp.scene_builder import count_light_state_transitions
-from topoworld.scenediffuserpp.scene_builder import parse_fcd
-from topoworld.scenediffuserpp.scene_builder import parse_tls_jsonl
-from topoworld.scenediffuserpp.schema import dataset_build_config_from_mapping
-from topoworld.scenediffuserpp.storage import SCHEMA_VERSION
-from topoworld.scenediffuserpp.storage import assign_split
-from topoworld.scenediffuserpp.storage import canonical_json_sha256
-from topoworld.scenediffuserpp.storage import file_sha256
-from topoworld.scenediffuserpp.storage import write_shard
+from scenediffuserpp.roadgraph import load_roadgraph
+from scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.scene_builder import build_window
+from scenediffuserpp.scene_builder import candidate_windows
+from scenediffuserpp.scene_builder import count_light_state_transitions
+from scenediffuserpp.scene_builder import parse_fcd
+from scenediffuserpp.scene_builder import parse_tls_jsonl
+from scenediffuserpp.schema import dataset_build_config_from_mapping
+from scenediffuserpp.storage import SCHEMA_VERSION
+from scenediffuserpp.storage import assign_split
+from scenediffuserpp.storage import canonical_json_sha256
+from scenediffuserpp.storage import file_sha256
+from scenediffuserpp.storage import write_shard
 
 
 def main() -> int:

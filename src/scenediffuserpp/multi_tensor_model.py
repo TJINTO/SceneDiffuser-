@@ -6,8 +6,8 @@ import math
 import torch
 from torch import nn
 
-from topoworld.scenediffuserpp.axial_transformer import AxialTransformerBlock
-from topoworld.scenediffuserpp.context_encoder import RoadgraphEncoder
+from scenediffuserpp.axial_transformer import AxialTransformerBlock
+from scenediffuserpp.context_encoder import RoadgraphEncoder
 
 
 @dataclass(frozen=True)

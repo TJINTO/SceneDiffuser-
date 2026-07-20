@@ -14,7 +14,7 @@ training:
   task: behavior_prediction
   history_steps: 11
 optimizer_provenance:
-  implementation: topoworld.scenediffuserpp.trainer.PaperAdafactor
+  implementation: scenediffuserpp.trainer.PaperAdafactor
   scale_parameter: false
   relative_step: false
   warmup_init: false

@@ -12,11 +12,11 @@ import torch
 from torch import nn
 from transformers.optimization import Adafactor as _HfAdafactor
 
-from topoworld.scenediffuserpp.diffusion import forward_noise
-from topoworld.scenediffuserpp.diffusion import sparse_v_loss
-from topoworld.scenediffuserpp.diffusion import velocity_target
-from topoworld.scenediffuserpp.schema import AGENT_CHANNELS
-from topoworld.scenediffuserpp.schema import LIGHT_CHANNELS
+from scenediffuserpp.diffusion import forward_noise
+from scenediffuserpp.diffusion import sparse_v_loss
+from scenediffuserpp.diffusion import velocity_target
+from scenediffuserpp.schema import AGENT_CHANNELS
+from scenediffuserpp.schema import LIGHT_CHANNELS
 
 
 PAPER_ADAFACTOR_DECAY_ADAM = 0.9999

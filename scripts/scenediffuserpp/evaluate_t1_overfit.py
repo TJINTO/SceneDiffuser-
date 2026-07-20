@@ -14,24 +14,24 @@ SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from topoworld.scenediffuserpp.denoising_evaluation import evaluate_denoising_levels
-from topoworld.scenediffuserpp.evaluation import verify_checkpoint_manifest
-from topoworld.scenediffuserpp.evaluation import training_log_through_checkpoint
-from topoworld.scenediffuserpp.masks import behavior_prediction_mask
-from topoworld.scenediffuserpp.model_data_contract import validate_scene_model_contract
-from topoworld.scenediffuserpp.model_data_contract import validate_training_model_contract
-from topoworld.scenediffuserpp.multi_tensor_model import ModelConfig
-from topoworld.scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
-from topoworld.scenediffuserpp.overfit_evaluation import behavior_prediction_baselines
-from topoworld.scenediffuserpp.overfit_evaluation import summarize_t1_overfit_gate
-from topoworld.scenediffuserpp.storage import file_sha256
-from topoworld.scenediffuserpp.storage import SceneDataset
-from topoworld.scenediffuserpp.trainer import load_checkpoint
-from topoworld.scenediffuserpp.trainer import SceneDiffuserTrainer
-from topoworld.scenediffuserpp.trainer import TrainerConfig
-from topoworld.scenediffuserpp.training_provenance import verify_resume_contract
-from topoworld.scenediffuserpp.training_sampler import resolve_diagnostic_sample_ids
-from topoworld.scenediffuserpp.training_sampler import select_training_indices
+from scenediffuserpp.denoising_evaluation import evaluate_denoising_levels
+from scenediffuserpp.evaluation import verify_checkpoint_manifest
+from scenediffuserpp.evaluation import training_log_through_checkpoint
+from scenediffuserpp.masks import behavior_prediction_mask
+from scenediffuserpp.model_data_contract import validate_scene_model_contract
+from scenediffuserpp.model_data_contract import validate_training_model_contract
+from scenediffuserpp.multi_tensor_model import ModelConfig
+from scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
+from scenediffuserpp.overfit_evaluation import behavior_prediction_baselines
+from scenediffuserpp.overfit_evaluation import summarize_t1_overfit_gate
+from scenediffuserpp.storage import file_sha256
+from scenediffuserpp.storage import SceneDataset
+from scenediffuserpp.trainer import load_checkpoint
+from scenediffuserpp.trainer import SceneDiffuserTrainer
+from scenediffuserpp.trainer import TrainerConfig
+from scenediffuserpp.training_provenance import verify_resume_contract
+from scenediffuserpp.training_sampler import resolve_diagnostic_sample_ids
+from scenediffuserpp.training_sampler import select_training_indices
 
 
 def main() -> int:

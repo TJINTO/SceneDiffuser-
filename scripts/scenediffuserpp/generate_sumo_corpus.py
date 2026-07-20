@@ -15,8 +15,8 @@ SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from topoworld.scenediffuserpp.sumo_export import SumoTeacherConfig
-from topoworld.scenediffuserpp.sumo_export import run_teacher
+from scenediffuserpp.sumo_export import SumoTeacherConfig
+from scenediffuserpp.sumo_export import run_teacher
 
 
 def main() -> int:

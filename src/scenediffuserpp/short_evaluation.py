@@ -6,7 +6,7 @@ from typing import Any
 
 import torch
 
-from topoworld.scenediffuserpp.normalization import POSITION_SCALE
+from scenediffuserpp.normalization import POSITION_SCALE
 
 
 @dataclass(frozen=True)

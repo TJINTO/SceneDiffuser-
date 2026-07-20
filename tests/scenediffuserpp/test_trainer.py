@@ -7,16 +7,16 @@ import pytest
 import torch
 from torch import nn
 
-from topoworld.scenediffuserpp.trainer import SceneDiffuserTrainer
-from topoworld.scenediffuserpp.trainer import PaperAdafactor
-from topoworld.scenediffuserpp.trainer import PAPER_ADAFACTOR_DECAY_ADAM
-from topoworld.scenediffuserpp.trainer import TrainerConfig
-from topoworld.scenediffuserpp.trainer import build_optimizer
-from topoworld.scenediffuserpp.trainer import cuda_memory_metrics
-from topoworld.scenediffuserpp.trainer import load_checkpoint
-from topoworld.scenediffuserpp.trainer import save_checkpoint
-from topoworld.scenediffuserpp.trainer import seed_torch
-from topoworld.scenediffuserpp.trainer import train_step
+from scenediffuserpp.trainer import SceneDiffuserTrainer
+from scenediffuserpp.trainer import PaperAdafactor
+from scenediffuserpp.trainer import PAPER_ADAFACTOR_DECAY_ADAM
+from scenediffuserpp.trainer import TrainerConfig
+from scenediffuserpp.trainer import build_optimizer
+from scenediffuserpp.trainer import cuda_memory_metrics
+from scenediffuserpp.trainer import load_checkpoint
+from scenediffuserpp.trainer import save_checkpoint
+from scenediffuserpp.trainer import seed_torch
+from scenediffuserpp.trainer import train_step
 
 
 class TinyDenoiser(nn.Module):

@@ -1,15 +1,15 @@
 import pytest
 import torch
 
-from topoworld.scenediffuserpp.diffusion import cosine_alpha_sigma
-from topoworld.scenediffuserpp.diffusion import forward_noise
-from topoworld.scenediffuserpp.diffusion import recover_clean
-from topoworld.scenediffuserpp.diffusion import sparse_v_loss
-from topoworld.scenediffuserpp.diffusion import velocity_target
-from topoworld.scenediffuserpp.masks import behavior_prediction_mask
-from topoworld.scenediffuserpp.masks import mixed_multitensor_training_masks
-from topoworld.scenediffuserpp.masks import random_control_mask
-from topoworld.scenediffuserpp.masks import scene_generation_mask
+from scenediffuserpp.diffusion import cosine_alpha_sigma
+from scenediffuserpp.diffusion import forward_noise
+from scenediffuserpp.diffusion import recover_clean
+from scenediffuserpp.diffusion import sparse_v_loss
+from scenediffuserpp.diffusion import velocity_target
+from scenediffuserpp.masks import behavior_prediction_mask
+from scenediffuserpp.masks import mixed_multitensor_training_masks
+from scenediffuserpp.masks import random_control_mask
+from scenediffuserpp.masks import scene_generation_mask
 
 
 def test_cosine_schedule_has_clean_and_noise_endpoints():

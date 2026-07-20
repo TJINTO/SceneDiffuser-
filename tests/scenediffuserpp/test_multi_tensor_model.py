@@ -3,9 +3,9 @@ import copy
 import pytest
 import torch
 
-from topoworld.scenediffuserpp.context_encoder import RoadgraphEncoder
-from topoworld.scenediffuserpp.multi_tensor_model import ModelConfig
-from topoworld.scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
+from scenediffuserpp.context_encoder import RoadgraphEncoder
+from scenediffuserpp.multi_tensor_model import ModelConfig
+from scenediffuserpp.multi_tensor_model import MultiTensorDenoiser
 
 
 def _config() -> ModelConfig:

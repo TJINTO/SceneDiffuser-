@@ -31,7 +31,7 @@ Excluded:
 - SUMO FCD/TLS outputs.
 - Model checkpoints.
 - Training logs and figures.
-- Non-SceneDiffuser TopoWorld, Raster-LeWM, and baseline experiments.
+- Non-SceneDiffuser non-SceneDiffuser baseline and exploratory experiments.
 
 ## Current Status
 
@@ -59,7 +59,7 @@ The tested environment is defined in `environment.yml`.
 
 ```powershell
 conda env create -f environment.yml
-conda activate topoworld-lewm
+conda activate scenediffuserpp-sumo
 ```
 
 For local source imports:
@@ -74,7 +74,7 @@ Run the focused SceneDiffuser++ suite:
 
 ```powershell
 $env:PYTHONPATH = "src"
-D:\miniconda3\envs\topoworld-lewm\python.exe -m pytest tests\scenediffuserpp -q
+D:\miniconda3\envs\scenediffuserpp-sumo\python.exe -m pytest tests\scenediffuserpp -q
 ```
 
 Recent local focused verification before export:
@@ -89,25 +89,25 @@ Generate a SUMO teacher corpus:
 
 ```powershell
 $env:PYTHONPATH = "src"
-D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\generate_sumo_corpus.py --help
+D:\miniconda3\envs\scenediffuserpp-sumo\python.exe scripts\scenediffuserpp\generate_sumo_corpus.py --help
 ```
 
 Build a scene dataset:
 
 ```powershell
-D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\build_scene_dataset.py --help
+D:\miniconda3\envs\scenediffuserpp-sumo\python.exe scripts\scenediffuserpp\build_scene_dataset.py --help
 ```
 
 Audit a dataset:
 
 ```powershell
-D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\audit_scene_dataset.py --dataset outputs\scenediffuserpp\nanjing_paper_24_dataset_16perrun_dense500_scale1000_no_light_filter --out outputs\scenediffuserpp\nanjing_dataset_audit --skip-hashes
+D:\miniconda3\envs\scenediffuserpp-sumo\python.exe scripts\scenediffuserpp\audit_scene_dataset.py --dataset outputs\scenediffuserpp\nanjing_paper_24_dataset_16perrun_dense500_scale1000_no_light_filter --out outputs\scenediffuserpp\nanjing_dataset_audit --skip-hashes
 ```
 
 Train a 128-agent behavior-prediction probe:
 
 ```powershell
-D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\train.py `
+D:\miniconda3\envs\scenediffuserpp-sumo\python.exe scripts\scenediffuserpp\train.py `
   --config configs\scenediffuserpp\train_paper128_bp_batch2_short.yaml `
   --dataset outputs\scenediffuserpp\nanjing_paper_24_dataset_16perrun_dense500_scale1000_no_light_filter `
   --out outputs\scenediffuserpp\nanjing24_paper128_bp_batch2
@@ -116,7 +116,7 @@ D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\train.py `
 Continue training with less frequent checkpointing:
 
 ```powershell
-D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\train.py `
+D:\miniconda3\envs\scenediffuserpp-sumo\python.exe scripts\scenediffuserpp\train.py `
   --config configs\scenediffuserpp\train_paper128_bp_batch2_short.yaml `
   --dataset outputs\scenediffuserpp\nanjing_paper_24_dataset_16perrun_dense500_scale1000_no_light_filter `
   --out outputs\scenediffuserpp\nanjing24_paper128_bp_batch2 `
@@ -128,7 +128,7 @@ D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\train.py `
 Run a short generation gate:
 
 ```powershell
-D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\evaluate_short.py `
+D:\miniconda3\envs\scenediffuserpp-sumo\python.exe scripts\scenediffuserpp\evaluate_short.py `
   --config configs\scenediffuserpp\train_paper128_bp_batch2_short.yaml `
   --dataset outputs\scenediffuserpp\nanjing_paper_24_dataset_16perrun_dense500_scale1000_no_light_filter `
   --checkpoint outputs\scenediffuserpp\nanjing24_paper128_bp_batch2\step_00004000.pt `
@@ -146,7 +146,7 @@ D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\evaluate_sh
 Run grouped held-out evaluation:
 
 ```powershell
-D:\miniconda3\envs\topoworld-lewm\python.exe scripts\scenediffuserpp\evaluate_heldout.py `
+D:\miniconda3\envs\scenediffuserpp-sumo\python.exe scripts\scenediffuserpp\evaluate_heldout.py `
   --train-config configs\scenediffuserpp\train_paper128_bp_batch2_short.yaml `
   --eval-config configs\scenediffuserpp\eval.yaml `
   --dataset outputs\scenediffuserpp\nanjing_paper_24_dataset_16perrun_dense500_scale1000_no_light_filter `
