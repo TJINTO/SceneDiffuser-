@@ -9,6 +9,12 @@ not release implementation code at the time this repository was prepared, so
 the architecture details here are reconstructed from the paper and validated
 with local SUMO fixtures.
 
+## Original Paper
+
+- Title: **SceneDiffuser++: City-Scale Traffic Simulation via a Generative World Model**
+- arXiv: [https://arxiv.org/abs/2506.21976](https://arxiv.org/abs/2506.21976)
+- CVF PDF: [Tan et al., CVPR 2025 paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Tan_SceneDiffuser_City-Scale_Traffic_Simulation_via_a_Generative_World_Model_CVPR_2025_paper.pdf)
+
 ## Scope
 
 Included:

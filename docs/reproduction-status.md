@@ -65,7 +65,9 @@ birth/removal transitions and pushes acceleration/jerk to the projection caps.
 
 Primary references:
 
-- SceneDiffuser++ paper: https://openaccess.thecvf.com/content/CVPR2025/papers/Tan_SceneDiffuser_City-Scale_Traffic_Simulation_via_a_Generative_World_Model_CVPR_2025_paper.pdf
+- SceneDiffuser++: City-Scale Traffic Simulation via a Generative World Model:
+  [arXiv](https://arxiv.org/abs/2506.21976),
+  [CVF PDF](https://openaccess.thecvf.com/content/CVPR2025/papers/Tan_SceneDiffuser_City-Scale_Traffic_Simulation_via_a_Generative_World_Model_CVPR_2025_paper.pdf)
 - SceneDiffuser predecessor: https://proceedings.neurips.cc/paper_files/paper/2024/file/64ff8d0bf0b0fe2b872a42a0de9668f8-Paper-Conference.pdf
 
 ## What Matches
